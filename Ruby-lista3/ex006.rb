@@ -1,0 +1,10 @@
+# Desenvolva um script em Ruby que, dados 2 números inteiros X e Y, calcule o valor de X elevado a Y. Faça isso sem usar o operador de potenciação (**).
+print "Digite um numero: "
+num = gets.chomp.to_i
+i = 0
+potenciação = 0
+while i < num
+  potenciação += num
+  i += 1
+end
+puts "A potenciação de #{num} é #{potenciação}"
