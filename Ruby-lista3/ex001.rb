@@ -2,7 +2,7 @@
 print ("Digite um numero pra ver a tabuada: ")
 num = gets.chomp.to_i
 i = 1
-while i <= 10
-  puts num * i
-  i += 1
-end
+(1..10).each { |i|
+puts "#{i} x #{num} = #{num * i}"
+
+}

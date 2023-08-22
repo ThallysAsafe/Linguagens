@@ -1,7 +1,5 @@
-i = 1
-while i < 101
+(1..100).each { |i|
   if i % 2 == 0
     puts i
   end
-  i += 1
-end
+}

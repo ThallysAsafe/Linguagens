@@ -3,10 +3,11 @@ print ("Digite quanto elementos quer que seja verificado: ")
 elementos = gets.chomp.to_i
 i = 1
 num = 0
-while i <= elementos
+for i in (1..elementos)
   if i % 2 == 0
     num += i
+    puts i
   end
   i += 1
 end
-puts num
+puts "A soma dos numeros pares é igual a: #{num}"

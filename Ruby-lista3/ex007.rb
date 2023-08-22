@@ -3,8 +3,7 @@ print "Digite um numero: "
 fatorial = gets.chomp.to_i
 i = 1
 fato = 1
-while i < fatorial
-  fato += fato * i
-  i += 1
+for num in (1..fatorial)
+  fato = fato * num
 end
 puts "O fatorial de #{fatorial}: #{fato}"

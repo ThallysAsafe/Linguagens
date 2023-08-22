@@ -3,8 +3,7 @@ print "Digite um numero: "
 num = gets.chomp.to_i
 i = 0
 potenciação = 0
-while i < num
+for i in (1..num)
   potenciação += num
-  i += 1
 end
 puts "A potenciação de #{num} é #{potenciação}"

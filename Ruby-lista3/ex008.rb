@@ -4,7 +4,7 @@ numero = gets.chomp.to_i
 i = 1
 contador = 0
 if numero > 0
-  while i <= numero
+  for i in (1..numero)
     if numero % i == 0
       contador += 1
     end

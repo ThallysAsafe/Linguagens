@@ -4,7 +4,7 @@ quantidade = gets.chomp.to_i
 i = 1
 somapares = 0
 somaimpares = 0
-while i <= quantidade
+for i in (1..quantidade)
   puts ("Digite um numero inteiro: ")
   numero = gets.chomp.to_i
   if numero % 2 == 0
@@ -14,7 +14,6 @@ while i <= quantidade
     puts "#{numero} é um numero impar"
     somaimpares += numero
   end
-  i += 1
 end
 puts "A soma dos numeros pares: #{somapares}"
 puts "A soma dos numeros impares: #{somaimpares}"
