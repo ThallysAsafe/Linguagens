@@ -13,12 +13,14 @@ if temp2 > temp1
 end
 i = 0
 resultado = 1
+j = 0
 while i < temp1 or i < temp2
   if temp1 == temp2
     puts "O MDC de #{temp1} e #{temp2}: #{temp1}"
     break
   end
   for i in 2..maior
+    j += 1
     if temp1 % (i-1) == 0 and temp2 % (i-1) == 0 and i > 2
       temp1 = temp1 / (i-1)
       temp2 = temp2 / (i-1)
@@ -31,7 +33,6 @@ while i < temp1 or i < temp2
       if (temp1 % (i) == 0) and (temp2 % (i) == 0)
         temp1 = temp1 / i+1
         temp2 = temp2 / i
-        puts 2
         resultado *= i
       end
     elsif temp1 % i == 0 and temp2 % i != 0
@@ -45,4 +46,5 @@ while i < temp1 or i < temp2
 end
 if numero1 != numero2
   puts "MDC de #{numero1} e #{numero2}: #{resultado}"
+  puts j
 end
