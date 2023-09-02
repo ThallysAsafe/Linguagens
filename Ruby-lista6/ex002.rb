@@ -4,8 +4,22 @@ listaNotas = {}
 while true
   print "Nome do aluno: "
   nome = gets.chomp
-  for i in (0..2)
-  print "nota do aluno: "
-  notas = gets.chomp.to_f
+  if nome != ''
+    notas = 0
+    for i in (1..2)
+    print "nota do aluno: "
+    notas += gets.chomp.to_f
+    media = notas / 2
+    end
+    listaNotas[nome] = media
+  end
+  print "Quer continuar? [S/N]"
+  continuar = gets.chomp
+  if continuar == 'n' or continuar == 'N'
+    break
+  end
 end
-for
+
+for alunos, media in listaNotas
+  puts "#{alunos}, media: #{media}"
+end
